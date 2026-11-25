@@ -213,3 +213,22 @@ Use the debugging skill to investigate and fix [Bug #1 from Step 1]. Build a fas
 ```text
 Use the architecture-audit skill on this repo. Focus on recent git hotspots, open the visual HTML before/after report in my browser, and wait for me to pick ONE module to deepen. Keep all Step 3 safety-net tests green during the refactor.
 ```
+
+---
+
+## 10. UI/UX Audit, Typography & Visual-Only Polish (`ui-ux-polish`)
+
+### Find all common UI/UX problems on a live site (Read-Only Audit)
+```text
+Use the ui-ux-polish skill in Audit mode on this app. Inspect the rendered pages on desktop (1280x800) and mobile (375x812), check typography/font sizes, spacing rhythm, alignment, contrast, interactive states, and AI-slop tells, and list Must Fix / Should Fix / Polish items with exact file:line pointers. Do NOT edit any files yet.
+```
+
+### Fix font sizes, typography hierarchy & spacing (Zero Logic Changes)
+```text
+Use the ui-ux-polish skill in Typeset + Layout mode on [page / folder]. Fix inconsistent font sizes, heading hierarchy, line-height, spacing rhythm, and mobile overflow. Strictly edit CSS/Tailwind/visual markup ONLY — do NOT modify any functions, state, API calls, or logic. Verify with `git diff`, existing tests, and desktop/mobile screenshots.
+```
+
+### Apply a given design / mockup consistently across the entire app
+```text
+Use the ui-ux-polish skill in Apply Design mode using [paste screenshot / design reference / DESIGN.md]. First extract and confirm the DESIGN.md token sheet with me, then apply it consistently screen-by-screen across the app without touching any business logic or functions. Verify with tests and desktop/mobile screenshots.
+```

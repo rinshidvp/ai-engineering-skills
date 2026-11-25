@@ -20,6 +20,7 @@ Works across **Claude Code**, **opencode**, **Google Antigravity**, **Cursor**, 
 | `sprint` | Heavy-duty parallel execution in isolated git worktrees with wave gates and `sprint_tasks.py` helper. |
 | `debugging` | Phase 0 tight red-capable repro loop → competing hypotheses → runtime observation (`[DEBUG-xxxx]` tags) → root-cause fix + regression test. |
 | `touch-gestures` | Build and verify browser swipes/drags across mobile Chrome and iOS Safari without breaking scroll/zoom. |
+| `ui-ux-polish` | Inspect live desktop/mobile UI, audit common design/typography/spacing bugs, or apply a `DESIGN.md` consistently across an app — strictly without touching functions or business logic. |
 | `code-quality` | Pragmatic architecture review, behavior-preserving simplification, SRP redesign, and completeness checks. |
 | `pr` | Concise PR body with visual summary, before/after execution evidence, and **Merge Danger** (`One-Way` vs. `Two-Way` Door + Blast Radius). |
 | `refine-loop` | Independent review → fix → verify polish loop capped at 2 passes. |
