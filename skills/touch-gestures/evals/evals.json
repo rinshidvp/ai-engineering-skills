@@ -1,0 +1,31 @@
+{
+  "skill_name": "touch-gestures",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "My friend says our stacked saree cards don't swipe on his iPhone. Chrome mouse-drag tests pass. Our iPhone-descriptor WebKit suite passed mouse drags and touchscreen.tap, but the CDP touch-swipe test was skipped there. We have no event trace or physical iPhone access yet. Should I tell the client this is verified on iOS and add passive:false plus catch-all pointer capture guards? Give a concise investigation and verification plan; don't edit any files.",
+      "expected_output": "Refuses unsupported verification claims, identifies the skipped native touch path, proposes competing observable hypotheses, and conditions listeners/capture changes on runtime evidence while requesting device details and preserving scroll/zoom.",
+      "files": [],
+      "expectations": [
+        "Does not claim iPhone swiping was verified by WebKit mouse/tap tests or the skipped CDP test.",
+        "Distinguishes the lack of a touch swipe test from a passing no-change tap test.",
+        "Gives at least two plausible hypotheses and concrete runtime observations before choosing a fix.",
+        "Does not prescribe blanket scroll suppression or silently swallowing capture errors; preserves vertical scrolling and pinch zoom.",
+        "Requests device/OS/browser context and explicitly leaves a physical-device retest pending."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Plan a swipeable photo deck below our existing mobile homepage without changing the current design. It has links, a preview dialog and a sticky header. Include touch and mouse input, next/previous buttons, keyboard, reduced motion, and tests for Chrome and Safari. A teammate suggests pointerleave should always reset the drag, touch-action:none on body, and a test that taps the image then expects the first card to remain selected. We can run Playwright but don't have a device lab. Keep the plan concise and don't create files.",
+      "expected_output": "An additive, bounded gesture plan with ownership/intent/cancellation, native scroll and zoom, capture-aware leave handling, a positive swipe regression, Safari focus return and explicit device-verification limits.",
+      "files": [],
+      "expectations": [
+        "Preserves existing design and scopes gesture ownership rather than disabling body scrolling/zoom.",
+        "Separates intent locking, selection threshold, cancellation and captured-pointer leave behaviour.",
+        "Requires a positive movement-and-release test that changes the selected item and would fail with no handler.",
+        "Covers modal opener focus/return, keyboard/buttons and reduced motion.",
+        "States that WebKit emulation is not a physical iPhone and leaves untested native swiping explicit."
+      ]
+    }
+  ]
+}

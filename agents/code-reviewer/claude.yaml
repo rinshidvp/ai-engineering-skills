@@ -1,0 +1,4 @@
+name: code-reviewer
+description: Independent read-only review of implemented code for quality, simplicity, SRP and completeness, ending in a SHIP / SHIP-WITH-FIXES / REWORK verdict. Use after a feature or sprint wave is built, or mid-build for an early second opinion. For a quick bug hunt on a diff, the built-in /code-review is lighter.
+tools: Read, Grep, Glob, Bash, Skill
+model: opus

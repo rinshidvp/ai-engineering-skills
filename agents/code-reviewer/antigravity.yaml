@@ -1,0 +1,8 @@
+name: code-reviewer
+description: Independent Pro-tier review of implemented code for quality, simplicity, SRP, and completeness. Invoke after a feature is built to get an unbiased second opinion.
+subagent: true
+mainAgent: false
+model: pro
+commandExecutionPolicy: sandbox
+skills:
+  - code-quality

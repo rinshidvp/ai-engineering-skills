@@ -1,0 +1,14 @@
+name: code-reviewer
+description: Independent Pro-tier review of implemented code for quality, simplicity, SRP, and completeness. Invoke after a feature is built to get an unbiased second opinion.
+mode: subagent
+subagent: true
+mainAgent: false
+permission:
+  edit: deny
+  skill:
+    "code-quality": allow
+  bash:
+    "*": deny
+    "git diff*": allow
+    "git log*": allow
+    "git status*": allow
